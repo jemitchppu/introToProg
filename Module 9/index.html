@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Validations</title>
+    <script defer src="/JS/script.js"></script>
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <label>Username</label>
+            <input type="text" minlength="8">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" minlength="12">
+        </div>
+        <button type="submit">Submit</button>
+    </form> 
+
+    <br>
+
+    <form>
+        <div>
+            <label>First Name</label>
+            <input type="text"  required pattern="[A-Za-z]+" title="Alphabetical characters only">
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input type="text"  required pattern="[A-Za-z]+" title="Alphabetical characters only">
+        </div>
+        <div>
+            <label>Address 1</label>
+            <input type="text" required style="background-color: pink;" oninput="style='background-color: white;'">
+        </div>
+        <div>
+            <label>Address 2</label>
+            <input type="text" required style="background-color: pink;" oninput="style='background-color: white;'">
+        </div>
+        <div>
+            <label>City</label>
+            <input type="text" required pattern="[A-Za-z]+" title="Alphabetical characters only">
+        </div>
+        <div>
+            <label>State</label>
+            <input type="text" required pattern="[A-Z]{2}" title="2 Capitalized alphabetical characters only. ex:PA">
+        </div>
+        <div>
+            <label>Zip Code</label>
+            <input type="text" required pattern="[A-Za-z]{5}" title="Alphabetical characters only">
+        </div>
+        <div>
+            <label>Question 1: What is your favorite coffee place in Pittsburgh?</label>
+            <input type="text" pattern="[A-Za-z]+" title="Alphabetical characters only" style="background-color: yellow;" oninput="style='background-color: white;'">
+        </div>
+        <div>
+            <label>Question 2: What is your favorite lunch spot in Pittsburgh?</label>
+            <input type="text" pattern="[A-Za-z]+" title="Alphabetical characters only" style="background-color: yellow;" oninput="style='background-color: white;'">
+        </div>
+        <div>
+            <label>Question 3: What is your favorite city to visit outside of Pittsburgh?</label>
+            <input type="text" pattern="[A-Za-z]+" title="Alphabetical characters only" style="background-color: yellow;" oninput="style='background-color: white;'">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
